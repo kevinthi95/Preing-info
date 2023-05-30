@@ -80,7 +80,7 @@ void choisirInfo(int *n,int *m, int *nb){
   do{
   verif2=1;
   printf("Combien voulez-vous de colonne : ");
-  scanf("%d" ,m);
+  verif2=scanf("%d" ,m);
   videbuffer();
   }while( *n<5 || *m>50 || verif2!=1); 
   // rajouter pour caractère aussi
@@ -88,7 +88,7 @@ void choisirInfo(int *n,int *m, int *nb){
   do{
   verif3=1;
   printf("Combien voulez-vous de symbole (entre 4 et 6):");
-  scanf("%d" ,nb);
+  verif3=scanf("%d" ,nb);
   videbuffer();
   }while (*nb<4 || *nb>6 || verif3!=1); //changer pour quand symbole 
   
